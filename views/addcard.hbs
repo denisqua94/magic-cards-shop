@@ -1,0 +1,19 @@
+
+<form id='addCard' name='addCard' action="/edit">
+
+  <label for="cardsName">Название</label>
+  <input id='cardsName' type="text" name='cardsName' required placeholder="Введите название">
+
+  <label for="price">Цена</label>
+  <input id='price' type="text" name='price' required placeholder="Введите цену">
+
+  <label for='img1'>Выберите файл</label>
+  <input id='img1' type="text" name='img1' required placeholder="Прикрепите картинку">
+
+  <label for='condition'>Состояние</label>
+  <input id='condition' type="text" name='condition' required placeholder="Добавьте состояние" >
+
+  <button type="submit">Добавить</button>
+  <div id="alert"></div>
+</form>
+    <script defer src="/addcard.client.js"></script>

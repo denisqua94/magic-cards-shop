@@ -1,0 +1,21 @@
+
+
+<form id='editCard' name='editCard' action="/edit/{{oneCard.id}}">
+
+        <label for="cardsName">Название</label>
+        <input id='cardsName' type="text" name='cardsName' required value="{{oneCard.cardsName}}">
+
+        <label for="price">Цена</label>
+        <input id='price' type="text" name='price' required value="{{oneCard.price}}">
+
+        <label for='img1'>Выберите файл</label>
+        <input id='img1' type="text" name='img1' required value="{{oneCard.img}}">
+
+        <label for='condition'>Состояние</label>
+        <input id='condition' type="text" name='condition' required value="{{oneCard.condition}}">
+
+        <button type="submit">Сохранить</button>
+        <div id="alert"></div>
+    </form>
+
+  <script defer src="/edit.client.js"></script>  
