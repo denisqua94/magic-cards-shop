@@ -18,14 +18,15 @@ const editRouter = require('./routes/editRouter');
 const loginRouter = require('./routes/loginRouter');
 const registrationRouter = require('./routes/registrationRouter');
 const storageRouter = require('./routes/storageRouter');
+const { default: ModelManager } = require('sequelize/dist/lib/model-manager');
 
 // const app = express();
 // const PORT = process.env.PORT ?? 3000;
 
 // подключение hbs
-// app.set('view engine', 'hbs');
-// app.set('views', path.join(__dirname, 'views'));
-// hbs.registerPartials(`${__dirname}/views/partials`);
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
+hbs.registerPartials(`${__dirname}/views/partials`);
 
 config(app);
 
@@ -54,3 +55,4 @@ app.listen(PORT, async () => {
     console.log('Не получилось подключиться к БД');
   }
 });
+module.exports = app
