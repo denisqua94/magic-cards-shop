@@ -17,9 +17,7 @@
     "use_env_variable":"DATABASE_URL",
     "dialectOptions": {
       "ssl": {
-        "rejectUnautorized": false,
-        // это означает, что наша программа
-        // может использовать неподписные сертификаты
+        "rejectUnautorized": false
       }
     }
     

@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sequelize-cli db:migrate --env development --config ./db/config/config.json && node app.js",
+    "start": "sequelize db:migrate && node app.js",
     "dev": "nodemon app.js --ignore ./sessions"
   },
   "repository": {
