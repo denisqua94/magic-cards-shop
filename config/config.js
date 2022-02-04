@@ -1,5 +1,5 @@
 const express = require('express');
-const app =require('app')
+const app = require('../app')
 const morgan = require('morgan');
 const expressSession = require('express-session');
 const hbs = require('hbs');
@@ -10,7 +10,7 @@ const sessionsConfig = require('./sessionsConfig');
 
 const config = (app) => {
 // USE
-  // app.use(morgan('dev'));
+  app.use(morgan('dev'));
   app.use(cookieParser());
   app.use(express.static('public'));
   app.use(expressSession(sessionsConfig));
