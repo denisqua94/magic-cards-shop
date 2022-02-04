@@ -9,7 +9,7 @@ const sessionsConfig = require('./sessionsConfig');
 
 const config = (app) => {
 // USE
-  app.use(morgan('dev'));
+  // app.use(morgan('dev'));
   app.use(cookieParser());
   app.use(express.static('public'));
   app.use(expressSession(sessionsConfig));
